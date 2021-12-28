@@ -1,0 +1,1 @@
+name = "KinMS GUI Installed"

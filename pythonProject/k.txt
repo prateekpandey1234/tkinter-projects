@@ -1,0 +1,14 @@
+def tern(n):
+    s=""
+    while n>=1:
+        s+=str(n%3)
+        n=n//3
+    return s[::-1]
+x,y=map(int,input().split())
+x,y=tern(x),tern(y)
+if len(x)<len(y):x="0"*(len(y)-len(x))+x
+elif len(y)<len(x):y="0"*(len(y)-len(x))+y
+ans=""
+for j in range(len(x)):
+    ans+=str(int(int(x[j])+int(y[j])))
+print(tern(5))
